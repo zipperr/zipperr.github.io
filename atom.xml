@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T04:09:53+09:00</updated>
+  <updated>2018-01-08T04:14:35+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,16 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://zipperr.github.io/blog/2018/01/08/test/"/>
-    <updated>2018-01-08T04:08:48+09:00</updated>
-    <id>http://zipperr.github.io/blog/2018/01/08/test</id>
-    <content type="html"><![CDATA[<h1>テストだよ</h1>
-
-<p>テストテスト</p>
-]]></content>
-  </entry>
   
 </feed>
