@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://yoursite.com/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2018-01-08T03:20:30+09:00</updated>
-  <id>http://yoursite.com/</id>
+  <title><![CDATA[クソゲー入れ]]></title>
+  <link href="http://zipperr.github.io/atom.xml" rel="self"/>
+  <link href="http://zipperr.github.io/"/>
+  <updated>2018-01-08T03:47:29+09:00</updated>
+  <id>http://zipperr.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Kento Taniuchi]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
