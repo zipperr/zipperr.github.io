@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Unity | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T05:43:01+09:00</updated>
+  <updated>2018-01-08T05:55:27+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3作目:ユニティちゃん散歩ゲーム]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/08/unity3/"/>
+    <updated>2018-01-08T05:45:46+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/08/unity3</id>
+    <content type="html"><![CDATA[<p><a href="https://qiita.com/kenta71/items/4d79d6f3171831ccd60a">このサイト</a>を参考にしてユニティちゃんが散歩するゲームを作成した<br/>
+<a href="https://zipperr.github.io/WebGL-UnityChan-Sanpo/">ユニティちゃん散歩ゲーム</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[2作目:ユニティちゃん鑑賞シミュレータ]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/08/unity2/"/>
+    <updated>2018-01-08T05:45:38+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/08/unity2</id>
+    <content type="html"><![CDATA[<p><a href="https://qiita.com/mokemokechicken/items/c7b6e96af3ff9cb6c5af">このサイト</a>を参考にしてユニティちゃん鑑賞シミュレータを作成した<br/>
+<a href="https://zipperr.github.io/WebGL-3DmodelView/">ユニティちゃん鑑賞シミュレータ</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[1作目:スロットゲーム]]></title>
