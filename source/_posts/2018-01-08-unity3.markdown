@@ -1,0 +1,9 @@
+---
+layout: post
+title: "3作目:ユニティちゃん散歩ゲーム"
+date: 2018-01-08 05:45:46 +0900
+comments: true
+categories: Unity
+---
+[このサイト](https://qiita.com/kenta71/items/4d79d6f3171831ccd60a)を参考にしてユニティちゃんが散歩するゲームを作成した  
+[ユニティちゃん散歩ゲーム](https://zipperr.github.io/WebGL-UnityChan-Sanpo/)

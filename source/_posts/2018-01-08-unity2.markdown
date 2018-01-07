@@ -1,0 +1,9 @@
+---
+layout: post
+title: "2作目:ユニティちゃん鑑賞シミュレータ"
+date: 2018-01-08 05:45:38 +0900
+comments: true
+categories: Unity
+---
+[このサイト](https://qiita.com/mokemokechicken/items/c7b6e96af3ff9cb6c5af)を参考にしてユニティちゃん鑑賞シミュレータを作成した  
+[ユニティちゃん鑑賞シミュレータ](https://zipperr.github.io/WebGL-3DmodelView/)

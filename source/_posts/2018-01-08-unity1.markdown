@@ -1,0 +1,9 @@
+---
+layout: post
+title: "1作目:スロットゲーム"
+date: 2018-01-08 05:29:00 +0900
+comments: true
+categories: Unity
+---
+[このサイト](http://y9uni.hatenablog.com/entry/2017/08/18/231735)を参考にしてスロットゲームを作成した  
+[スロットゲーム](https://zipperr.github.io/WebGL-slot/)
