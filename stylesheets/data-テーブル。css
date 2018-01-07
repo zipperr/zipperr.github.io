@@ -1,0 +1,32 @@
+* + テーブル {
+    border-style:solid;
+    border-width:1px;
+    border-color:#e7e3e7;
+    margin: 10px 0 30px 0;
+}
+* + テーブルth, * + テーブルtd {
+    border-style:dashed;
+    border-width:1px;
+    border-color:#e7e3e7;
+}
+* + テーブルth {
+    border-style:solid;
+    font-weight:bold;
+    background: url("/images/noise.png?1330434582") repeat scroll left top #F7F3F7;
+    padding: 2px 9px;
+}
+* + テーブルtd {
+    padding: 2px 9px;
+}
+* + テーブルth[align="left"], * + テーブルtd[align="left"] {
+    text-align:left;
+}
+* + テーブルth[align="right"], * + テーブルtd[align="right"] {
+    text-align:right;
+}
+* + テーブルth[align="center"], * + テーブルtd[align="center"] {
+    text-align:center;
+}
+tr:nth-child(even){
+    background: url("/images/noise.png?1330434582") repeat scroll left top #F7F3F7;
+}

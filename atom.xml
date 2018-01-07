@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T05:34:48+09:00</updated>
+  <updated>2018-01-08T05:43:01+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -18,8 +18,8 @@
     <link href="http://zipperr.github.io/blog/2018/01/08/unity1/"/>
     <updated>2018-01-08T05:29:00+09:00</updated>
     <id>http://zipperr.github.io/blog/2018/01/08/unity1</id>
-    <content type="html"><![CDATA[<p>(このサイト)[<a href="http://y9uni.hatenablog.com/entry/2017/08/18/231735">http://y9uni.hatenablog.com/entry/2017/08/18/231735</a>]を参考にしてスロットゲームを作成した<br/>
-(スロットゲーム)[<a href="https://zipperr.github.io/WebGL-slot/">https://zipperr.github.io/WebGL-slot/</a>]</p>
+    <content type="html"><![CDATA[<p><a href="http://y9uni.hatenablog.com/entry/2017/08/18/231735">このサイト</a>を参考にしてスロットゲームを作成した<br/>
+<a href="https://zipperr.github.io/WebGL-slot/">スロットゲーム</a></p>
 ]]></content>
   </entry>
   
