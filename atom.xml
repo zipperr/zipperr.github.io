@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T07:43:12+09:00</updated>
+  <updated>2018-01-08T16:20:28+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Qiitaに投稿した記事がバズった]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/08/qiita/"/>
+    <updated>2018-01-08T16:06:14+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/08/qiita</id>
+    <content type="html"><![CDATA[<p><a href="https://qiita.com/zipper/items/8fbed306e203b17be0c3">Vim日本語チートシート作った</a>
+チートシートを作ったらバズった話</p>
+
+<!-- more -->
+
+
+<p>1/7〜1/8にかけてトレンド1位といいねランキング1位キープした<br/>
+<a href="http://zipperr.github.io/images/tre.png">トレンド1位</a>
+<a href="http://zipperr.github.io/images/iine.png">いいね1位</a></p>
+
+<p>※1/8 16時現在、投稿から1日で8500View190いいね</p>
+
+<p><strong>今年はUnityゲームとかQiita投稿とかアウトプットを多めにしていこうと思う</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3作目:ユニティちゃん散歩ゲーム]]></title>

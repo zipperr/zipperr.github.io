@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://zipperr.github.io/blog/2018/01/08/qiita/</loc>
+<lastmod>2018-01-08T16:06:14+09:00</lastmod>
+</url>
+<url>
 <loc>http://zipperr.github.io/blog/2018/01/08/unity3/</loc>
 <lastmod>2018-01-08T05:45:46+09:00</lastmod>
 </url>
@@ -20,5 +24,8 @@
 </url>
 <url>
 <loc>http://zipperr.github.io/blog/categories/unity/</loc>
+</url>
+<url>
+<loc>http://zipperr.github.io/blog/categories/vim/</loc>
 </url>
 </urlset>
