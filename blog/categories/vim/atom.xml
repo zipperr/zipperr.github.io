@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T16:20:28+09:00</updated>
+  <updated>2018-01-08T16:23:27+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -18,15 +18,15 @@
     <link href="http://zipperr.github.io/blog/2018/01/08/qiita/"/>
     <updated>2018-01-08T16:06:14+09:00</updated>
     <id>http://zipperr.github.io/blog/2018/01/08/qiita</id>
-    <content type="html"><![CDATA[<p><a href="https://qiita.com/zipper/items/8fbed306e203b17be0c3">Vim日本語チートシート作った</a>
+    <content type="html"><![CDATA[<p><a href="https://qiita.com/zipper/items/8fbed306e203b17be0c3">Vim日本語チートシート作った</a><br/>
 チートシートを作ったらバズった話</p>
 
 <!-- more -->
 
 
 <p>1/7〜1/8にかけてトレンド1位といいねランキング1位キープした<br/>
-<a href="/images/tre.png">トレンド1位</a>
-<a href="/images/iine.png">いいね1位</a></p>
+{\% img left /images/tre.png 640 480 \%}
+{\% img left /images/iine.png 640 480 \%}</p>
 
 <p>※1/8 16時現在、投稿から1日で8500View190いいね</p>
 
