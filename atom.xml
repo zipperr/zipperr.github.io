@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T16:27:35+09:00</updated>
+  <updated>2018-01-08T16:58:12+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,30 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GitPageとOctpressでブログを設置した]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/08/octpress/"/>
+    <updated>2018-01-08T16:37:03+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/08/octpress</id>
+    <content type="html"><![CDATA[<p><strong>このページはGithubから作られました。</strong></p>
+
+<!-- more -->
+
+
+<h2>GitpageとOctpressでブログを作った</h2>
+
+<p>Gitpageについては<a href="https://qiita.com/budougumi0617/items/221bb946d1c90d6769e9">こちら</a>を参考にした<br/>
+簡潔に説明すると「{アカウント名}.github.io.git」っていう名前のリポジトリ作って<br/>
+index.htmlとか置いて<a href="http://">http://</a>{アカウント名}.github.io/にアクセスするとHPになっているというサービス。<br/>
+実は既存のリポジトリに「docs」というディレクトリを作っても同様の事ができる</p>
+
+<p><a href="http://octopress.org">Octpress</a>というのが、「Github Pagesでブログ構築ができる静的サイトジェネレーター」。<br/>
+マークダウン記法で記事が書けて、記事の作成からアップロードまで全てターミナル上で行えるプログラマーに優しいブログ作成ツール<br/>
+構築は<a href="http://blog.sojiro.me/blog/2014/04/26/how-to-make-your-blog-on-github-pages-with-octopress/">こちら</a>のサイトを参考にした。<br/>
+Google AnalyticsとかGoogle Adsenseも使えるらしい</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Qiitaに投稿した記事がバズった]]></title>
