@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T16:23:27+09:00</updated>
+  <updated>2018-01-08T16:25:43+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -25,8 +25,8 @@
 
 
 <p>1/7〜1/8にかけてトレンド1位といいねランキング1位キープした<br/>
-{\% img left /images/tre.png 640 480 \%}
-{\% img left /images/iine.png 640 480 \%}</p>
+<img class="left" src="http://zipperr.github.io/images/tre.png" width="640" height="480"><br/>
+<img class="left" src="http://zipperr.github.io/images/iine.png" width="640" height="480"></p>
 
 <p>※1/8 16時現在、投稿から1日で8500View190いいね</p>
 
