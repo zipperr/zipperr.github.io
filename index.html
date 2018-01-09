@@ -9,8 +9,12 @@
   <meta name="author" content="Kento Taniuchi">
 
   
-  <meta name="description" content="&lsquo;&rsquo;&lsquo;
-function! Youbi() let weeks = [ &ldquo;(日)&rdquo;, &ldquo;(月)&rdquo;, &ldquo;(火)&rdquo;, &ldquo;(水)&rdquo;, &ldquo;(木)&rdquo &hellip;">
+  <meta name="description" content="1
+2
+3
+4
+5
+function! Youbi() let weeks = [ "(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)" ] let wday = strftime("%w") return strftime('%Y/%m/%d'). &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -138,19 +142,22 @@ function! Youbi() let weeks = [ &ldquo;(日)&rdquo;, &ldquo;(月)&rdquo;, &ldquo
   </header>
 
 
-  <div class="entry-content"><p>&lsquo;&rsquo;&lsquo;
-function! Youbi()
-    let weeks = [ &ldquo;(日)&rdquo;, &ldquo;(月)&rdquo;, &ldquo;(火)&rdquo;, &ldquo;(水)&rdquo;, &ldquo;(木)&rdquo;, &ldquo;(金)&rdquo;, &ldquo;(土)&rdquo; ]
-    let wday = strftime(&ldquo;%w&rdquo;)
-    return strftime(&rsquo;%Y/%m/%d').weeks[wday].strftime(&lsquo; %H:%M&rsquo;)
-endfunction</p>
+  <div class="entry-content"><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>function! Youbi()
+</span><span class='line'>  let weeks = [ "(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)" ]
+</span><span class='line'>  let wday = strftime("%w")
+</span><span class='line'>  return strftime('%Y/%m/%d').weeks[wday].strftime(' %H:%M')
+</span><span class='line'>endfunction</span></code></pre></td></tr></table></div></figure>
 
-<p>&lsquo;&rsquo;'</p>
 
 <p>↓</p>
 
 <p><img src="/images/youbi.png" width="640" height="480"><br/>
-ターミナルを全画面表示していると時間確認のためだけにトラックパッド触って<br/>
+ターミナルを全画面表示している時に時間確認のためだけにトラックパッド触って<br/>
 上画面表示させて時計を見る手間が省けました<br/>
 あとおしゃれ。</p>
 </div>
