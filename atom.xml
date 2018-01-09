@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-09T19:00:56+09:00</updated>
+  <updated>2018-01-09T23:12:27+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vimのステータスラインに日付と時間表示つけた]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/09/vim/"/>
+    <updated>2018-01-09T23:08:12+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/09/vim</id>
+    <content type="html"><![CDATA[<p>&lsquo;&rsquo;&lsquo;
+function! Youbi()
+    let weeks = [ &ldquo;(日)&rdquo;, &ldquo;(月)&rdquo;, &ldquo;(火)&rdquo;, &ldquo;(水)&rdquo;, &ldquo;(木)&rdquo;, &ldquo;(金)&rdquo;, &ldquo;(土)&rdquo; ]
+    let wday = strftime(&ldquo;%w&rdquo;)
+    return strftime(&rsquo;%Y/%m/%d').weeks[wday].strftime(&lsquo; %H:%M&rsquo;)
+endfunction</p>
+
+<p>&lsquo;&rsquo;'</p>
+
+<p>↓</p>
+
+<p><img src="http://zipperr.github.io/images/youbi.png" width="640" height="480"><br/>
+ターミナルを全画面表示していると時間確認のためだけにトラックパッド触って<br/>
+上画面表示させて時計を見る手間が省けました<br/>
+あとおしゃれ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[4作目:ユニティちゃん散歩ゲーム2 途中経過報告]]></title>
