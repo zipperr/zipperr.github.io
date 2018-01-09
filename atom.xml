@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-08T17:18:32+09:00</updated>
+  <updated>2018-01-09T19:00:56+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,18 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[4作目:ユニティちゃん散歩ゲーム2 途中経過報告]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/09/unity4/"/>
+    <updated>2018-01-09T18:57:38+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/09/unity4</id>
+    <content type="html"><![CDATA[<p><a href="https://zipperr.github.io/WebGL-UnityChan-Sanpo2/">ユニティちゃん散歩ゲーム2</a><br/>
+スタート画面とゲームオーバー画面追加して敵オブジェクトとぶつかったら<br/>
+ゲームオーバーになるようにしたい<br/>
+(まだ作りかけ)</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[GitPageとOctpressでブログを設置した]]></title>
