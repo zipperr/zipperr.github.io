@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-09T23:17:30+09:00</updated>
+  <updated>2018-01-10T00:10:51+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vimのステータスラインに日付と時間表示つけた]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/09/vim/"/>
+    <updated>2018-01-09T23:08:12+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/09/vim</id>
+    <content type="html"><![CDATA[<pre><code>function! Youbi()
+    let weeks = [ "(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)" ]
+    let wday = strftime("%w")
+    return strftime('%Y/%m/%d').weeks[wday].strftime(' %H:%M')
+endfunction
+</code></pre>
+
+<p>↓</p>
+
+<p><img src="/images/youbi.png" width="640" height="480"><br/>
+ターミナルを全画面表示している時に時間確認のためだけにトラックパッド触って<br/>
+上画面表示させて時計を見る手間が省けました<br/>
+あとおしゃれ。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Qiitaに投稿した記事がバズった]]></title>
