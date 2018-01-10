@@ -4,7 +4,7 @@
   <title><![CDATA[Category: unity | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T19:44:26+09:00</updated>
+  <updated>2018-01-10T21:38:26+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[6作目:画面遷移にゲーム性持たせたやつ]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/10/unity6/"/>
+    <updated>2018-01-10T21:34:10+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/10/unity6</id>
+    <content type="html"><![CDATA[<p><a href="https://zipperr.github.io/WebGL-SceneChangeTest2/">画面遷移にゲーム性持たせた</a></p>
+
+<pre><code>    if (transform.position.y &lt;= -10.0f) {
+        SceneManager.LoadScene ("blue");
+    }
+</code></pre>
+
+<p>対象(クエリちゃん)の座標がy-10以下(落下)したらゲームオーバー</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[5作目:画面遷移するだけのゲーム]]></title>
@@ -116,16 +132,6 @@ if文のこれはマウスクリックされたらtrueを返す</p>
     <id>http://zipperr.github.io/blog/2018/01/08/unity2</id>
     <content type="html"><![CDATA[<p><a href="https://qiita.com/mokemokechicken/items/c7b6e96af3ff9cb6c5af">このサイト</a>を参考にしてユニティちゃん鑑賞シミュレータを作成した<br/>
 <a href="https://zipperr.github.io/WebGL-3DmodelView/">ユニティちゃん鑑賞シミュレータ</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[1作目:スロットゲーム]]></title>
-    <link href="http://zipperr.github.io/blog/2018/01/08/unity1/"/>
-    <updated>2018-01-08T05:29:00+09:00</updated>
-    <id>http://zipperr.github.io/blog/2018/01/08/unity1</id>
-    <content type="html"><![CDATA[<p><a href="http://y9uni.hatenablog.com/entry/2017/08/18/231735">このサイト</a>を参考にしてスロットゲームを作成した<br/>
-<a href="https://zipperr.github.io/WebGL-slot/">スロットゲーム</a></p>
 ]]></content>
   </entry>
   
