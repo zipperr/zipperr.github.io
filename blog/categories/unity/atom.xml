@@ -4,7 +4,7 @@
   <title><![CDATA[Category: unity | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T21:38:26+09:00</updated>
+  <updated>2018-01-10T22:15:16+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,101 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ゲーム作成用チートシート]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/10/unity7/"/>
+    <updated>2018-01-10T22:12:39+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/10/unity7</id>
+    <content type="html"><![CDATA[<p>これだけ覚えておけば大体のゲーム作れそう</p>
+
+<!-- more -->
+
+
+<p>画面遷移<br/>
+<code>
+SceneManager.LoadScene ("シーン名");
+</code>
+接触したらゲームオーバー<br/>
+<code>
+if(collider.gameObject.name == ("unitychan"))
+</code></p>
+
+<p>落下したらゲームオーバー<br/>
+<code>
+if(transform.position.y &lt;= -10.0f)
+</code></p>
+
+<p>クリックしたら遷移<br/>
+<code>
+if(Input.GetMouseButtonDown (0))
+</code>
+接触したら呼ばれる<br/>
+<code>
+void OnTriggerEnter(Collider other) {}
+</code>
+同上<br/>
+<code>
+void OnCollisionEnter(Collision col){}
+</code>
+60秒をセットして1秒ごとにタイムを減らす<br/>
+<code>
+    private float time = 60;
+    void Update (){
+        time -= Time.deltaTime;
+        //マイナスは表示しない
+        if (time &lt; 0) time = 0;
+    }
+</code>
+玉発射<br/>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>public GameObject bullet;
+</span><span class='line'>// 弾丸発射点
+</span><span class='line'>public Transform muzzle;
+</span><span class='line'>// 弾丸の速度
+</span><span class='line'>public float speed = 1000;
+</span><span class='line'>// Use this for initialization&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;void Start () {
+</span><span class='line'>}&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;void Update () {
+</span><span class='line'>    // z キーが押された時
+</span><span class='line'>    if(Input.GetKeyDown (KeyCode.Z)){
+</span><span class='line'>    // 弾丸の複製
+</span><span class='line'>    GameObject bullets = GameObject.Instantiate(bullet)as GameObject;
+</span><span class='line'>    Vector3 force;
+</span><span class='line'>    force = this.gameObject.transform.forward * speed;
+</span><span class='line'>    // Rigidbodyに力を加えて発射
+</span><span class='line'>    bullets.GetComponent&lt;Rigidbody&gt;().AddForce (force);
+</span><span class='line'>    // 弾丸の位置を調整
+</span><span class='line'>    bullets.transform.position = muzzle.position;
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[6作目:画面遷移にゲーム性持たせたやつ]]></title>
@@ -122,16 +217,6 @@ if文のこれはマウスクリックされたらtrueを返す</p>
 <a href="https://zipperr.github.io/WebGL-UnityChan-Sanpo/">ユニティちゃん散歩ゲーム</a></p>
 
 <p>フィールドめっちゃ広いけどとある物を隠したから探して見て</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[2作目:ユニティちゃん鑑賞シミュレータ]]></title>
-    <link href="http://zipperr.github.io/blog/2018/01/08/unity2/"/>
-    <updated>2018-01-08T05:45:38+09:00</updated>
-    <id>http://zipperr.github.io/blog/2018/01/08/unity2</id>
-    <content type="html"><![CDATA[<p><a href="https://qiita.com/mokemokechicken/items/c7b6e96af3ff9cb6c5af">このサイト</a>を参考にしてユニティちゃん鑑賞シミュレータを作成した<br/>
-<a href="https://zipperr.github.io/WebGL-3DmodelView/">ユニティちゃん鑑賞シミュレータ</a></p>
 ]]></content>
   </entry>
   

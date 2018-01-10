@@ -5,16 +5,14 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>6作目:画面遷移にゲーム性持たせたやつ - クソゲー入れ</title>
+  <title>ゲーム作成用チートシート - クソゲー入れ</title>
   <meta name="author" content="Kento Taniuchi">
 
   
-  <meta name="description" content="画面遷移にゲーム性持たせた 1
-2
-3
-if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
-} 対象(クエリちゃん)の座標がy-10以下(落下)したらゲームオーバー
-">
+  <meta name="description" content="これだけ覚えておけば大体のゲーム作れそう 画面遷移 1
+SceneManager.LoadScene ("シーン名"); 接触したらゲームオーバー 1
+if(collider.gameObject.name == ("unitychan")) 落下したらゲームオーバー 1
+if(transform &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -23,7 +21,7 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://zipperr.github.io/blog/2018/01/10/unity6">
+  <link rel="canonical" href="http://zipperr.github.io/blog/2018/01/10/unity7">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 <link href="<%= config.url %>/stylesheets/data-table.css" rel="stylesheet" type="text/css" />
@@ -121,7 +119,7 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
   <header>
     
       
-        <h1 class="entry-title">6作目:画面遷移にゲーム性持たせたやつ</h1>
+        <h1 class="entry-title">ゲーム作成用チートシート</h1>
       
     
     
@@ -131,7 +129,7 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
 
 
 
-<time class='entry-date' datetime='2018-01-10T21:34:10+09:00'><span class='date'>2018年01月10日</span> <span class='time'>9:34 pm</span></time>
+<time class='entry-date' datetime='2018-01-10T22:12:39+09:00'><span class='date'>2018年01月10日</span> <span class='time'>10:12 pm</span></time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -141,17 +139,112 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
   </header>
 
 
-<div class="entry-content"><p><a href="https://zipperr.github.io/WebGL-SceneChangeTest2/">画面遷移にゲーム性持たせた</a></p>
+<div class="entry-content"><p>これだけ覚えておけば大体のゲーム作れそう</p>
+
+<!-- more -->
+
+
+<p>画面遷移</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SceneManager.LoadScene ("シーン名");</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接触したらゲームオーバー</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(collider.gameObject.name == ("unitychan"))</span></code></pre></td></tr></table></div></figure>
+
+
+<p>落下したらゲームオーバー</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(transform.position.y &lt;= -10.0f)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>クリックしたら遷移</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(Input.GetMouseButtonDown (0))</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接触したら呼ばれる</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>void OnTriggerEnter(Collider other) {}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>同上</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>void OnCollisionEnter(Collision col){}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>60秒をセットして1秒ごとにタイムを減らす</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>if (transform.position.y &lt;= -10.0f) {
-</span><span class='line'>  SceneManager.LoadScene ("blue");
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>private float time = 60;
+</span><span class='line'>void Update (){
+</span><span class='line'>  time -= Time.deltaTime;
+</span><span class='line'>  //マイナスは表示しない
+</span><span class='line'>  if (time &lt; 0) time = 0;
 </span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
 
 
-<p>対象(クエリちゃん)の座標がy-10以下(落下)したらゲームオーバー</p>
+<p>玉発射</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>public GameObject bullet;
+</span><span class='line'>// 弾丸発射点
+</span><span class='line'>public Transform muzzle;
+</span><span class='line'>// 弾丸の速度
+</span><span class='line'>public float speed = 1000;
+</span><span class='line'>// Use this for initialization
+</span><span class='line'>
+</span><span class='line'>void Start () {
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>void Update () {
+</span><span class='line'>  // z キーが押された時
+</span><span class='line'>  if(Input.GetKeyDown (KeyCode.Z)){
+</span><span class='line'>  // 弾丸の複製
+</span><span class='line'>  GameObject bullets = GameObject.Instantiate(bullet)as GameObject;
+</span><span class='line'>  Vector3 force;
+</span><span class='line'>  force = this.gameObject.transform.forward * speed;
+</span><span class='line'>  // Rigidbodyに力を加えて発射
+</span><span class='line'>  bullets.GetComponent&lt;Rigidbody&gt;().AddForce (force);
+</span><span class='line'>  // 弾丸の位置を調整
+</span><span class='line'>  bullets.transform.position = muzzle.position;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
@@ -174,7 +267,7 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
 
 
 
-<time class='entry-date' datetime='2018-01-10T21:34:10+09:00'><span class='date'>2018年01月10日</span> <span class='time'>9:34 pm</span></time>
+<time class='entry-date' datetime='2018-01-10T22:12:39+09:00'><span class='date'>2018年01月10日</span> <span class='time'>10:12 pm</span></time>
       
       
 
@@ -189,7 +282,7 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://zipperr.github.io/blog/2018/01/10/unity6/" data-via="zippeer" data-counturl="http://zipperr.github.io/blog/2018/01/10/unity6/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://zipperr.github.io/blog/2018/01/10/unity7/" data-via="zippeer" data-counturl="http://zipperr.github.io/blog/2018/01/10/unity7/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -198,17 +291,15 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
     <div class="fb-like" data-layout="button_count" data-send="false" data-width="300" data-show-faces="false"></div>
   
 
-  <a href="http://b.hatena.ne.jp/entry/http://zipperr.github.io/blog/2018/01/10/unity6/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+  <a href="http://b.hatena.ne.jp/entry/http://zipperr.github.io/blog/2018/01/10/unity7/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 
 </div>
 
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2018/01/10/unity5/" title="Previous Post: 5作目:画面遷移するだけのゲーム">&laquo; 5作目:画面遷移するだけのゲーム</a>
+        <a class="basic-alignment left" href="/blog/2018/01/10/unity6/" title="Previous Post: 6作目:画面遷移にゲーム性持たせたやつ">&laquo; 6作目:画面遷移にゲーム性持たせたやつ</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2018/01/10/unity7/" title="Next Post: ゲーム作成用チートシート">ゲーム作成用チートシート &raquo;</a>
       
     </p>
   </footer>
@@ -238,8 +329,8 @@ if (transform.position.y &lt;= -10.0f) { SceneManager.LoadScene ("blue");
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://zipperr.github.io/blog/2018/01/10/unity6/';
-        var disqus_url = 'http://zipperr.github.io/blog/2018/01/10/unity6/';
+        var disqus_identifier = 'http://zipperr.github.io/blog/2018/01/10/unity7/';
+        var disqus_url = 'http://zipperr.github.io/blog/2018/01/10/unity7/';
         var disqus_script = 'embed.js';
       
     (function () {

@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T21:38:26+09:00</updated>
+  <updated>2018-01-10T22:15:16+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,120 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ゲーム作成用チートシート]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/10/unity7/"/>
+    <updated>2018-01-10T22:12:39+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/10/unity7</id>
+    <content type="html"><![CDATA[<p>これだけ覚えておけば大体のゲーム作れそう</p>
+
+<!-- more -->
+
+
+<p>画面遷移</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>SceneManager.LoadScene ("シーン名");</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接触したらゲームオーバー</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(collider.gameObject.name == ("unitychan"))</span></code></pre></td></tr></table></div></figure>
+
+
+<p>落下したらゲームオーバー</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(transform.position.y &lt;= -10.0f)</span></code></pre></td></tr></table></div></figure>
+
+
+<p>クリックしたら遷移</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>if(Input.GetMouseButtonDown (0))</span></code></pre></td></tr></table></div></figure>
+
+
+<p>接触したら呼ばれる</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>void OnTriggerEnter(Collider other) {}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>同上</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>void OnCollisionEnter(Collision col){}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>60秒をセットして1秒ごとにタイムを減らす</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>private float time = 60;
+</span><span class='line'>void Update (){
+</span><span class='line'>  time -= Time.deltaTime;
+</span><span class='line'>  //マイナスは表示しない
+</span><span class='line'>  if (time &lt; 0) time = 0;
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>玉発射</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>public GameObject bullet;
+</span><span class='line'>// 弾丸発射点
+</span><span class='line'>public Transform muzzle;
+</span><span class='line'>// 弾丸の速度
+</span><span class='line'>public float speed = 1000;
+</span><span class='line'>// Use this for initialization
+</span><span class='line'>
+</span><span class='line'>void Start () {
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>void Update () {
+</span><span class='line'>  // z キーが押された時
+</span><span class='line'>  if(Input.GetKeyDown (KeyCode.Z)){
+</span><span class='line'>  // 弾丸の複製
+</span><span class='line'>  GameObject bullets = GameObject.Instantiate(bullet)as GameObject;
+</span><span class='line'>  Vector3 force;
+</span><span class='line'>  force = this.gameObject.transform.forward * speed;
+</span><span class='line'>  // Rigidbodyに力を加えて発射
+</span><span class='line'>  bullets.GetComponent&lt;Rigidbody&gt;().AddForce (force);
+</span><span class='line'>  // 弾丸の位置を調整
+</span><span class='line'>  bullets.transform.position = muzzle.position;
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[6作目:画面遷移にゲーム性持たせたやつ]]></title>
