@@ -4,7 +4,7 @@
   <title><![CDATA[Category: unity | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T19:42:39+09:00</updated>
+  <updated>2018-01-10T19:44:26+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -29,33 +29,55 @@
 
 
 <p>画面遷移のソースコード<br/>
-```
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.SceneManagement;</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using System.Collections;
+</span><span class='line'>using System.Collections.Generic;
+</span><span class='line'>using UnityEngine;
+</span><span class='line'>using UnityEngine.SceneManagement;&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;public class red : MonoBehaviour {&lt;/p&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;pre&gt;&lt;code&gt;// Use this for initialization
+</span><span class='line'>void Start () {
+</span><span class='line'>
+</span><span class='line'>}
+</span><span class='line'>
+</span><span class='line'>// Update is called once per frame
+</span><span class='line'>void Update () {
+</span><span class='line'>
+</span><span class='line'>    if (Input.GetMouseButtonDown (0)) {
+</span><span class='line'>        SceneManager.LoadScene ("green");
+</span><span class='line'>    }   
+</span><span class='line'>}
+</span><span class='line'>&lt;/code&gt;&lt;/pre&gt;
+</span><span class='line'>
+</span><span class='line'>&lt;p&gt;}</span></code></pre></td></tr></table></div></figure></p>
 
-<p>public class red : MonoBehaviour {</p>
-
-<pre><code>// Use this for initialization
-void Start () {
-
-}
-
-// Update is called once per frame
-void Update () {
-
-    if (Input.GetMouseButtonDown (0)) {
-        SceneManager.LoadScene ("green");
-    }   
-}
+<pre><code>SceneManager.LoadScene ("green");
 </code></pre>
 
-<p>}
-<code>
-SceneManager.LoadScene ("green");
-</code>
-で引数に渡したグリーンのシーンを呼び出している<br/>
+<p>で引数に渡したグリーンのシーンを呼び出している<br/>
 <code>
 Input.GetMouseButtonDown (0)
 </code>
