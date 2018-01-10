@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T22:15:16+09:00</updated>
+  <updated>2018-01-10T23:41:18+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,16 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[動画埋め込みテスト]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/10/linux/"/>
+    <updated>2018-01-10T23:40:13+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/10/linux</id>
+    <content type="html"><![CDATA[<div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/7Vckd462Q5Q?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ゲーム作成用チートシート]]></title>
