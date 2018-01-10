@@ -4,7 +4,7 @@
   <title><![CDATA[Category: unity | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/unity/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-10T19:36:56+09:00</updated>
+  <updated>2018-01-10T19:42:39+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -21,7 +21,45 @@
     <content type="html"><![CDATA[<p><a href="https://zipperr.github.io/WebGL-SceneChangeTest/">画面遷移テスト</a></p>
 
 <p>  この<a href="http://freesworder.net/unity-scene-change/">サイト</a>を参考にした<br/>
-  雑な画面遷移</p>
+  雑な画面遷移(クリックで遷移)</p>
+
+<p>ビルドしてから気づいたけど「スタート」とか「ゲームメイン画面」とか「ゲームオーバー」とかテキスト入れていたのに消えてる</p>
+
+<!-- more -->
+
+
+<p>画面遷移のソースコード<br/>
+```
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;</p>
+
+<p>public class red : MonoBehaviour {</p>
+
+<pre><code>// Use this for initialization
+void Start () {
+
+}
+
+// Update is called once per frame
+void Update () {
+
+    if (Input.GetMouseButtonDown (0)) {
+        SceneManager.LoadScene ("green");
+    }   
+}
+</code></pre>
+
+<p>}
+<code>
+SceneManager.LoadScene ("green");
+</code>
+で引数に渡したグリーンのシーンを呼び出している<br/>
+<code>
+Input.GetMouseButtonDown (0)
+</code>
+if文のこれはマウスクリックされたらtrueを返す</p>
 ]]></content>
   </entry>
   

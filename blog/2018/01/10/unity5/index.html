@@ -9,8 +9,23 @@
   <meta name="author" content="Kento Taniuchi">
 
   
-  <meta name="description" content="画面遷移テスト このサイトを参考にした 雑な画面遷移
-">
+  <meta name="description" content="画面遷移テスト このサイトを参考にした 雑な画面遷移(クリックで遷移) ビルドしてから気づいたけど「スタート」とか「ゲームメイン画面」とか「ゲームオーバー」とかテキスト入れていたのに消えてる 画面遷移のソースコード 1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -140,7 +155,66 @@
 <div class="entry-content"><p><a href="https://zipperr.github.io/WebGL-SceneChangeTest/">画面遷移テスト</a></p>
 
 <p>  この<a href="http://freesworder.net/unity-scene-change/">サイト</a>を参考にした<br/>
-  雑な画面遷移</p>
+  雑な画面遷移(クリックで遷移)</p>
+
+<p>ビルドしてから気づいたけど「スタート」とか「ゲームメイン画面」とか「ゲームオーバー」とかテキスト入れていたのに消えてる</p>
+
+<!-- more -->
+
+
+<p>画面遷移のソースコード</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>using System.Collections;
+</span><span class='line'>using System.Collections.Generic;
+</span><span class='line'>using UnityEngine;
+</span><span class='line'>using UnityEngine.SceneManagement;
+</span><span class='line'> 
+</span><span class='line'>public class red : MonoBehaviour {
+</span><span class='line'> 
+</span><span class='line'>  // Use this for initialization
+</span><span class='line'>  void Start () {
+</span><span class='line'>      
+</span><span class='line'>  }
+</span><span class='line'>  
+</span><span class='line'>  // Update is called once per frame
+</span><span class='line'>  void Update () {
+</span><span class='line'> 
+</span><span class='line'>      if (Input.GetMouseButtonDown (0)) {
+</span><span class='line'>          SceneManager.LoadScene ("green");
+</span><span class='line'>      }   
+</span><span class='line'>  }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>SceneManager.LoadScene (&ldquo;green&rdquo;);</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>で引数に渡したグリーンのシーンを呼び出している  </span></code></pre></td></tr></table></div></figure>
+
+
+<p>Input.GetMouseButtonDown (0)
+```
+if文のこれはマウスクリックされたらtrueを返す</p>
 </div>
 
 
