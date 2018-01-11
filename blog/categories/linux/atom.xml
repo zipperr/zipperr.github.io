@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: linux | クソゲー入れ]]></title>
+  <link href="http://zipperr.github.io/blog/categories/linux/atom.xml" rel="self"/>
+  <link href="http://zipperr.github.io/"/>
+  <updated>2018-01-11T22:16:53+09:00</updated>
+  <id>http://zipperr.github.io/</id>
+  <author>
+    <name><![CDATA[Kento Taniuchi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[RMS尊師]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/11/linux/"/>
+    <updated>2018-01-11T22:15:41+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/11/linux</id>
+    <content type="html"><![CDATA[<div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/1sxNy0qQDkU?ecver=2" style="position:absolute;width:100%;height:100%;left:0" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+
+
+<p>GNUおじさん</p>
+]]></content>
+  </entry>
+  
+</feed>
