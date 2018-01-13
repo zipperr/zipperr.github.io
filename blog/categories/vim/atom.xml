@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-11T22:16:53+09:00</updated>
+  <updated>2018-01-14T00:41:02+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[週間ユーザランキング3位]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/14/qiita/"/>
+    <updated>2018-01-14T00:39:23+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/14/qiita</id>
+    <content type="html"><![CDATA[<p><img src="/images/3.png" width="640" height="480"></p>
+
+<p>2位行けそう</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[vimのステータスラインに日付と時間表示つけた]]></title>

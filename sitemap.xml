@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://zipperr.github.io/blog/2018/01/14/qiita/</loc>
+<lastmod>2018-01-14T00:39:23+09:00</lastmod>
+</url>
+<url>
 <loc>http://zipperr.github.io/blog/2018/01/11/linux/</loc>
 <lastmod>2018-01-11T22:15:41+09:00</lastmod>
 </url>
