@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-14T04:16:53+09:00</updated>
+  <updated>2018-01-14T12:57:46+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Qiita2作目]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/14/qiita2/"/>
+    <updated>2018-01-14T12:56:14+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/14/qiita2</id>
+    <content type="html"><![CDATA[<p><img src="http://zipperr.github.io/images/bi.png" width="640" height="480"></p>
+
+<p>微バズ</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[qiita2本目]]></title>
