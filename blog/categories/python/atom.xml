@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: python | クソゲー入れ]]></title>
+  <link href="http://zipperr.github.io/blog/categories/python/atom.xml" rel="self"/>
+  <link href="http://zipperr.github.io/"/>
+  <updated>2018-01-17T22:44:11+09:00</updated>
+  <id>http://zipperr.github.io/</id>
+  <author>
+    <name><![CDATA[Kento Taniuchi]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[ツイッターアカウントを自動生成するプログラム]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/17/vim/"/>
+    <updated>2018-01-17T22:42:15+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/17/vim</id>
+    <content type="html"><![CDATA[<p>作ったけどツイッターの仕様変更でTorを使おうがどのIPからでも携帯電話認証が必要になっていたのでゴミコードになってしまった</p>
+]]></content>
+  </entry>
+  
+</feed>
