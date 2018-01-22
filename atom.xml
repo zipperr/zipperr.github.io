@@ -4,7 +4,7 @@
   <title><![CDATA[クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-17T22:44:11+09:00</updated>
+  <updated>2018-01-22T19:40:57+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,75 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[もっかい見たい動画リスト]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/22/linux/"/>
+    <updated>2018-01-22T19:25:14+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/22/linux</id>
+    <content type="html"><![CDATA[<p>見たいけど時間がない<br/>
+とりあえず忘れないように貼っておく</p>
+
+<h1>BPS</h1>
+
+<h2>プログラミングギャグアニメ</h2>
+
+<p>バトルプログラマーシラセ1話</p>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm6031276/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm6031276">バトルプログラマーシラセ 100MBPS 1話</a></noscript></p>
+
+<p>バトルプログラマーシラセ2話</p>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm6031451/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm6031451">バトルプログラマーシラセ 100MBPS 2話</a></noscript></p>
+
+<p>バトルプログラマーシラセ3話</p>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm6049664/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm6049664">バトルプログラマーシラセ 100MBPS 3話</a></noscript></p>
+
+<p>バトルプログラマーシラセ4話</p>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm6058987/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm6058987">バトルプログラマーシラセ 100MBPS 4話 rev2</a></noscript></p>
+
+<p>バトルプログラマーシラセ5話</p>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm6059122/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm6059122">バトルプログラマーシラセ 100MBPS 5話</a></noscript></p>
+
+<h1>Revolution OS</h1>
+
+<h2>Linuxができるまでのドキュメンタリー</h2>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm2494084/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm2494084">Revolution OS (字幕入り) その1</a></noscript></p>
+
+<h1>serial experiments  lain</h1>
+
+<h2>LISP言語でお父さんを作る小学生</h2>
+
+<script type="application/javascript" src="https://embed.nicovideo.jp/watch/sm5667565/script?w=640&h=360"></script>
+
+
+<p><noscript><a href="http://www.nicovideo.jp/watch/sm5667565">serial experiments  lainプレイ動画level1【コメ実況風】</a></noscript></p>
+
+<p><a href="https://gyao.yahoo.co.jp/player/00066/v09123/v0986100000000541403/">アニメ</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[ツイッターアカウントを自動生成するプログラム]]></title>
