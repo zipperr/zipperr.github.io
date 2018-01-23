@@ -4,7 +4,7 @@
   <title><![CDATA[Category: vim | クソゲー入れ]]></title>
   <link href="http://zipperr.github.io/blog/categories/vim/atom.xml" rel="self"/>
   <link href="http://zipperr.github.io/"/>
-  <updated>2018-01-22T19:40:57+09:00</updated>
+  <updated>2018-01-23T21:26:11+09:00</updated>
   <id>http://zipperr.github.io/</id>
   <author>
     <name><![CDATA[Kento Taniuchi]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[vim改良]]></title>
+    <link href="http://zipperr.github.io/blog/2018/01/23/vim/"/>
+    <updated>2018-01-23T21:24:50+09:00</updated>
+    <id>http://zipperr.github.io/blog/2018/01/23/vim</id>
+    <content type="html"><![CDATA[<p><img src="/images/vim.png" width="640" height="480"></p>
+
+<p>かなり良いカラースキーマを見つけた</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Qiita2作目]]></title>
@@ -63,27 +74,6 @@ endfunction
 ターミナルを全画面表示している時に時間確認のためだけにトラックパッド触って<br/>
 上画面表示させて時計を見る手間が省けました<br/>
 あとおしゃれ。</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Qiitaに投稿した記事がバズった]]></title>
-    <link href="http://zipperr.github.io/blog/2018/01/08/qiita/"/>
-    <updated>2018-01-08T16:06:14+09:00</updated>
-    <id>http://zipperr.github.io/blog/2018/01/08/qiita</id>
-    <content type="html"><![CDATA[<p><a href="https://qiita.com/zipper/items/8fbed306e203b17be0c3">Vim日本語チートシート作った</a><br/>
-チートシートを作ったらバズった話</p>
-
-<!-- more -->
-
-
-<p>1/7〜1/8にかけてトレンド1位といいねランキング1位キープした<br/>
-<img src="/images/tre.png" width="640" height="480"><br/>
-<img src="/images/iine.png" width="640" height="480"></p>
-
-<p>※1/8 16時現在、投稿から1日で8500View190いいね</p>
-
-<p><strong>今年はUnityゲームとかQiita投稿とかアウトプットを多めにしていこうと思う</strong></p>
 ]]></content>
   </entry>
   
