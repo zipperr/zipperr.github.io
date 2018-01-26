@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://zipperr.github.io/blog/2018/01/26/test/</loc>
+<lastmod>2018-01-26T20:09:48+09:00</lastmod>
+</url>
+<url>
 <loc>http://zipperr.github.io/blog/2018/01/25/vim/</loc>
 <lastmod>2018-01-25T21:14:29+09:00</lastmod>
 </url>
@@ -96,5 +100,8 @@
 </url>
 <url>
 <loc>http://zipperr.github.io/blog/categories/python/</loc>
+</url>
+<url>
+<loc>http://zipperr.github.io/posts/2/</loc>
 </url>
 </urlset>
